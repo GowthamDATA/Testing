@@ -1,0 +1,17 @@
+name: My First Robot
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Get my code
+        uses: actions/checkout@v4
+
+      - name: Run my bash script
+        run: bash test.sh
+        
