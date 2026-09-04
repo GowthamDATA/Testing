@@ -23,7 +23,7 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}  
       
       - name: Deploy to S3
-        run: aws s3 cp index.html s3://github-test-gowtham
+        run: aws s3 cp Index.html s3://github-test-gowtham
 
 
             
